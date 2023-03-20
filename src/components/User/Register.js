@@ -50,9 +50,7 @@ export const Register = () => {
           placeholder="Password"
         ></Input>
       </label>
-      <Button maxWidth="100px" {...ButtonStyle}>
-        Register
-      </Button>
+      <button>Register</button>
     </form>
   );
 };
