@@ -30,8 +30,6 @@ export const ModalWindow = () => {
     dispatch(toggleModalAction());
   };
 
-  useEffect(() => {}, [dispatch, modalOpened]);
-
   return (
     <>
       <Modal
