@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react';
 import { selectModalOpened, selectModalState } from 'redux/selectors';
-import {
-  editOpenContactAction,
-  toggleModalAction,
-  setOpenContactAction,
-} from 'redux/modalSlice';
+import { editOpenContactAction, toggleModalAction } from 'redux/modalSlice';
 import { InputStyle } from 'components/GlobalStyles/GlobalStyles';
 import { useSelector, useDispatch } from 'react-redux';
 import { Modal, Button, Input, ModalContent } from '@chakra-ui/react';

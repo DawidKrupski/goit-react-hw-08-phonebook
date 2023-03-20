@@ -6,7 +6,6 @@ import { setFilterAction } from 'redux/filterSlice';
 import { selectFilters } from 'redux/selectors';
 import { Input } from '@chakra-ui/react';
 import { InputStyle } from 'components/GlobalStyles/GlobalStyles';
-import { FaBeer } from 'react-icons/fa';
 
 export const Filter = () => {
   const dispatch = useDispatch();
