@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { selectModalOpened, selectModalState } from 'redux/selectors';
 import { editOpenContactAction, toggleModalAction } from 'redux/modalSlice';
 import { InputStyle } from 'components/GlobalStyles/GlobalStyles';
