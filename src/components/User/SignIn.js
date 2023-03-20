@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux';
 import { signIn } from 'redux/auth/auth.thunk';
 import { InputStyle } from 'components/GlobalStyles/GlobalStyles';
 import { Input } from '@chakra-ui/react';
+import css from './SignIn.module.css';
 
 export const SignIn = () => {
   const dispatch = useDispatch();
@@ -20,7 +21,7 @@ export const SignIn = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} autoComplete="off">
+    <form className={css.signin} onSubmit={handleSubmit} autoComplete="off">
       <label>
         Email
         <Input

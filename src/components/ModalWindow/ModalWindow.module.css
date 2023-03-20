@@ -1,0 +1,40 @@
+.modal__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.modal__label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.modal__button {
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 80px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  margin-left: 60px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}

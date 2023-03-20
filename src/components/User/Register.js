@@ -2,6 +2,7 @@ import { Input } from '@chakra-ui/react';
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/auth.thunk';
 import { InputStyle } from 'components/GlobalStyles/GlobalStyles';
+import css from './Register.module.css';
 
 export const Register = () => {
   const dispatch = useDispatch();
@@ -21,7 +22,7 @@ export const Register = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} autoComplete="off">
+    <form className={css.register} onSubmit={handleSubmit} autoComplete="off">
       <label>
         Username
         <Input
