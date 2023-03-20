@@ -1,8 +1,7 @@
-import { Button, Input } from '@chakra-ui/react';
+import { Input } from '@chakra-ui/react';
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/auth.thunk';
 import { InputStyle } from 'components/GlobalStyles/GlobalStyles';
-import { ButtonStyle } from 'components/GlobalStyles/GlobalStyles';
 
 export const Register = () => {
   const dispatch = useDispatch();
