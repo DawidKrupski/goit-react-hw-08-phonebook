@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/auth.thunk';
 import { InputStyle } from 'components/GlobalStyles/GlobalStyles';
 import { ButtonStyle } from 'components/GlobalStyles/GlobalStyles';
-import { Form } from 'formik';
 
 export const Register = () => {
   const dispatch = useDispatch();

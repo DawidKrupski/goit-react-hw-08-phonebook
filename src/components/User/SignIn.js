@@ -1,8 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { signIn } from 'redux/auth/auth.thunk';
 import { InputStyle } from 'components/GlobalStyles/GlobalStyles';
-import { Button, Input } from '@chakra-ui/react';
-import { ButtonStyle } from 'components/GlobalStyles/GlobalStyles';
+import { Input } from '@chakra-ui/react';
 
 export const SignIn = () => {
   const dispatch = useDispatch();

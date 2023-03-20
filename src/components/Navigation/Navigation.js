@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { selectEmail } from 'redux/auth/auth.selector';
 import { logout } from 'redux/auth/auth.thunk';
 import { ButtonStyle } from 'components/GlobalStyles/GlobalStyles';
-import { Avatar, AvatarBadge, AvatarGroup } from '@chakra-ui/react';
+import { Avatar } from '@chakra-ui/react';
 
 export const Navigation = () => {
   const navigate = useNavigate();
