@@ -49,7 +49,7 @@ export const Register = () => {
           placeholder="Password"
         ></Input>
       </label>
-      <button>Register</button>
+      <button> Register </button>
     </form>
   );
 };
