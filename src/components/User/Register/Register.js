@@ -3,9 +3,16 @@ import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/auth.thunk';
 import { InputStyle } from 'components/GlobalStyles/GlobalStyles';
 import css from './Register.module.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const Register = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleSignInClick = event => {
+    event.preventDefault();
+    navigate('/sign-in');
+  };
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -50,7 +57,10 @@ export const Register = () => {
           placeholder="Password"
         ></Input>
       </label>
-      <button> Register </button>
+      <button className={css.registerBtn}> Register </button>
+      <Link onClick={handleSignInClick}>
+        You already have account? Sign in here
+      </Link>
     </form>
   );
 };

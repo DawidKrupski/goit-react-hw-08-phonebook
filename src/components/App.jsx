@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
-import { Api } from './Api';
-import { Register } from './User/Register';
-import { SignIn } from './User/SignIn';
+import { Api } from './Api/Api';
+import { Register } from './User/Register/Register';
+import { SignIn } from './User/SignIn/SignIn';
 import { Navigation } from './Navigation/Navigation';
 import { ProtectedRoute } from './ProtectedRoute';
 import { useEffect } from 'react';
@@ -10,6 +10,7 @@ import { useDispatch } from 'react-redux';
 import { useAuth } from 'hook/useAuth/useAuth';
 import { RestrictedRoute } from './RestrictedRoute';
 import { ModalWindow } from './ModalWindow/ModalWindow';
+import { Logout } from './User/Logout/Logout';
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -24,14 +25,13 @@ export const App = () => {
     <div>Loading</div>
   ) : (
     <div>
-      <nav>
-        <Navigation to="*" end />
-      </nav>
       <Routes>
+        <Route path="*" element={<Navigation />}></Route>
         <Route
-          path="*"
+          path="/phonebook"
           element={
             <>
+              <Logout />
               <ProtectedRoute component={<Api />} redirectTo={'/sign-in'} />
               <ModalWindow />
             </>

@@ -3,9 +3,16 @@ import { signIn } from 'redux/auth/auth.thunk';
 import { InputStyle } from 'components/GlobalStyles/GlobalStyles';
 import { Input } from '@chakra-ui/react';
 import css from './SignIn.module.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const SignIn = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleRegisterClick = event => {
+    event.preventDefault();
+    navigate('/register');
+  };
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -40,7 +47,10 @@ export const SignIn = () => {
           placeholder="Password"
         ></Input>
       </label>
-      <button>Sign-in</button>
+      <button className={css.signinBtn}>Sign-in</button>
+      <Link onClick={handleRegisterClick}>
+        You dont have account? Register here
+      </Link>
     </form>
   );
 };

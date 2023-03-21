@@ -1,3 +1,30 @@
 .list {
-  margin-left: 20px;
+  background-color: #f9f7f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.listItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+}
+.contacts {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.contactsBtn {
+  display: flex;
+  gap: 10px;
 }

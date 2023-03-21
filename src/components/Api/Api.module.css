@@ -1,0 +1,13 @@
+.api {
+  display: flex;
+  gap: 200px;
+  justify-content: center;
+}
+
+.apiTitles {
+  font-size: 25px;
+}
+
+.addContact {
+  margin-bottom: 30px;
+}

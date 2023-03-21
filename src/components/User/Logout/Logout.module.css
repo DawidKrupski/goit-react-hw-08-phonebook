@@ -1,0 +1,12 @@
+.logout {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  background-color: #815ad54f;
+  align-items: center;
+}
+
+.logoutBtn {
+  display: flex;
+  justify-content: flex-end;
+}

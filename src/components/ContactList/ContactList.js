@@ -31,17 +31,21 @@ export const ContactList = () => {
     <div>
       <ul className={css.list}>
         {filteredContacts.map(contact => (
-          <li key={contact.id}>
-            {contact.name} - {contact.number}
-            <Button
-              {...UserButtonStyle}
-              onClick={() => handleDelete(contact.id)}
-            >
-              Delete
-            </Button>
-            <Button {...UserButtonStyle} onClick={() => handleModal(contact)}>
-              Edit
-            </Button>
+          <li className={css.listItems} key={contact.id}>
+            <div className={css.contacts}>
+              {contact.name} - {contact.number}
+            </div>
+            <div className={css.contactsBtn}>
+              <Button
+                {...UserButtonStyle}
+                onClick={() => handleDelete(contact.id)}
+              >
+                Delete
+              </Button>
+              <Button {...UserButtonStyle} onClick={() => handleModal(contact)}>
+                Edit
+              </Button>
+            </div>
           </li>
         ))}
       </ul>
