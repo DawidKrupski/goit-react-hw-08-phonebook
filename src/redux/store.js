@@ -4,7 +4,7 @@ import { filterReducer } from './filterSlice';
 import { persistStore } from 'redux-persist';
 import persistReducer from 'redux-persist/es/persistReducer';
 import storage from 'redux-persist/lib/storage';
-import { authReducer } from './auth/auth.slice';
+import { authReducer } from './auth/authSlice';
 import {
   FLUSH,
   PAUSE,

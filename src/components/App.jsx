@@ -5,7 +5,7 @@ import { SignIn } from './User/SignIn/SignIn';
 import { Navigation } from './Navigation/Navigation';
 import { ProtectedRoute } from './ProtectedRoute';
 import { useEffect } from 'react';
-import { refreshUser } from 'redux/auth/auth.thunk';
+import { refreshUser } from 'redux/auth/authThunk';
 import { useDispatch } from 'react-redux';
 import { useAuth } from 'hook/useAuth/useAuth';
 import { RestrictedRoute } from './RestrictedRoute';

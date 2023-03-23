@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { signIn } from 'redux/auth/auth.thunk';
+import { signIn } from 'redux/auth/authThunk';
 import { InputStyle } from 'components/GlobalStyles/GlobalStyles';
 import { Input } from '@chakra-ui/react';
 import css from './SignIn.module.css';

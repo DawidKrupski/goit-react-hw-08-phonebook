@@ -1,7 +1,7 @@
 import { Button, Avatar } from '@chakra-ui/react';
 import { ButtonStyle } from 'components/GlobalStyles/GlobalStyles';
-import { logout } from 'redux/auth/auth.thunk';
-import { selectEmail } from 'redux/auth/auth.selector';
+import { logout } from 'redux/auth/authThunk';
+import { selectEmail } from 'redux/auth/authSelector';
 import { useDispatch, useSelector } from 'react-redux';
 import css from './Logout.module.css';
 

@@ -1,6 +1,6 @@
 import { Input } from '@chakra-ui/react';
 import { useDispatch } from 'react-redux';
-import { register } from 'redux/auth/auth.thunk';
+import { register } from 'redux/auth/authThunk';
 import { InputStyle } from 'components/GlobalStyles/GlobalStyles';
 import css from './Register.module.css';
 import { Link, useNavigate } from 'react-router-dom';
